@@ -29,7 +29,6 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@EqualsAndHashCode
 /****/
 
 @Data
