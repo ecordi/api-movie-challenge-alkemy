@@ -15,7 +15,6 @@ import javax.validation.constraints.NotNull;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -29,16 +28,18 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@EqualsAndHashCode
+
 @Data
 @Entity
 @Table(name = "characters")
 public class Character implements Serializable {
 
+
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 2970418123549394228L;
+	private static final long serialVersionUID = -7185505026487441228L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -30,7 +30,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -42,7 +41,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@EqualsAndHashCode
+
 /**
  * *
  */
@@ -53,12 +52,14 @@ import lombok.ToString;
 
 public class Movie implements Serializable {
 
-    /**
-     *
-     */
-    private static final long serialVersionUID = 6348587719835971578L;
+   
 
-    @Id
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4156524471766333264L;
+
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
