@@ -9,7 +9,7 @@ public interface GenreServices {
 	
 	public Genre create(Genre genre);
 
-	public Genre updateById(Long id);
+	public Genre updateById(Genre genre, Long id);
 
 	public boolean delete(Long id);
 }

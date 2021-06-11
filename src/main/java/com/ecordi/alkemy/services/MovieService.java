@@ -9,7 +9,7 @@ public interface MovieService {
 
 	public Movie create(Movie movie);
 
-	public Movie updateById(Long id);
+	public Movie updateById(Movie movie,Long id);
 
 	public boolean delete(Long id);
 }
