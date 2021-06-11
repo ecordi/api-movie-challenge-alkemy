@@ -68,6 +68,6 @@ public class Character implements Serializable {
 	private String story;
         
 	@ManyToMany(mappedBy = "associated_characters")
-	private Set<Movie> associated_films;
+	private Set<Movie> associated_movies;
 
 }

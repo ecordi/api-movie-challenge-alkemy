@@ -13,8 +13,6 @@ import java.util.Set;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -45,10 +43,10 @@ public class Genre implements Serializable {
 	@NotEmpty
 	@Column(name = "name")
 	private String name;
-	@JsonIgnoreProperties
+	
 	@Column(name = "image")
 	private String image;
-	@JsonIgnoreProperties
+	
 	@OneToMany
-	private Set<Movie> associated_films = new HashSet<>();
+	private Set<Movie> associated_movies = new HashSet<>();
 }
