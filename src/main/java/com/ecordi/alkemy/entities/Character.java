@@ -45,14 +45,14 @@ public class Character implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "image")
-	@Lob
-	private String image;
-
 	@NotEmpty
 	@Column(name = "name")	
 	private String name;
 	
+	@Column(name = "image")
+	@Lob
+	private String image;
+
 	@NotNull
 	@Min(1)
 	@Column(name="age")
